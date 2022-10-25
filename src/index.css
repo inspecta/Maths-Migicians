@@ -1,27 +1,70 @@
-body {
+@import url("http://fonts.cdnfonts.com/css/cascadia-code");
+
+html {
+  box-sizing: border-box;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Cascadia Code", sans-serif;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.calc-container {
+  border: 1px solid rgb(128, 128, 128);
+  margin: 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tbody {
+  background: rgb(209, 209, 209);
+}
+
+tr {
+  width: 100%;
+}
+
+td > input {
+  padding: 10px 0 25px 0;
+  border: 0;
+  background: rgb(163, 163, 163);
+  width: 100%;
+  text-align: right;
+}
+
+input[type="text"] {
+  padding: 15px 0 15px 0;
+}
+
+input::placeholder {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+td > button {
+  padding: 15px 40px;
+  width: 100%;
+  text-align: center;
+  border: 0;
+}
+
+.operators {
+  background: rgb(255, 136, 1);
+}
+
+.operators:hover {
+  background: rgb(167, 89, 0);
+  color: #fff;
+}
+
+.non-operators:hover {
+  background: rgb(124, 124, 124);
+  color: #fff;
 }
