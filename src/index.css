@@ -32,7 +32,7 @@ tr {
 }
 
 td > input {
-  padding: 10px 0 25px 0px;
+  padding: 10px 0 25px 0;
   border: 0;
   background: rgb(163, 163, 163);
   width: 100%;
