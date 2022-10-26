@@ -1,6 +1,8 @@
 @import url("http://fonts.cdnfonts.com/css/cascadia-code");
 
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,11 +22,11 @@ body {
 }
 
 table {
-  border-spacing: 0;
+  border-spacing: 2px;
 }
 
 tbody {
-  background: rgb(209, 209, 209);
+  background: rgb(143, 143, 143);
 }
 
 tr {
@@ -39,7 +41,9 @@ td > input {
   text-align: right;
 }
 
-input[type="text"] {
+.result {
+  text-align: right;
+  color: #fff;
   padding: 15px 0 15px 0;
 }
 
