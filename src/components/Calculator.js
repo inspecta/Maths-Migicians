@@ -14,8 +14,6 @@ class Calculator extends React.Component {
             <tr className="result-container">
               <td colSpan="4">
                 <input type="text" className="result" placeholder="0" />
-                {' '}
-
               </td>
             </tr>
             <tr>
