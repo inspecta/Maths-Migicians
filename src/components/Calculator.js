@@ -1,69 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-  handlePress = (e) => {
-    const newState = calculate(this.state, e.target.innerText);
-    this.setState(newState);
-  }
+  const handlePress = (e) => {
+    const number = e.target.innerText;
+    setState((state) => calculate(state, number));
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
+  const { total, next, operation } = state;
 
-    return (
-      <div className="calc-container">
-        <table id="calc" cellSpacing="0">
-          <tbody id="calc-body">
-            <tr className="result-container">
-              <td colSpan="4" className="result">
-                <span>{total}</span>
-                <span>{operation}</span>
-                <span>{next}</span>
-              </td>
-            </tr>
-            <tr>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>AC</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>+/-</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>%</button></td>
-              <td><button type="button" className="operators" onClick={this.handlePress}>÷</button></td>
-            </tr>
-            <tr>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>7</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>8</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>9</button></td>
-              <td><button type="button" className="operators" onClick={this.handlePress}>x</button></td>
-            </tr>
-            <tr>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>4</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>5</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>6</button></td>
-              <td><button type="button" className="operators" onClick={this.handlePress}>-</button></td>
-            </tr>
-            <tr>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>1</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>2</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>3</button></td>
-              <td><button type="button" className="operators" onClick={this.handlePress}>+</button></td>
-            </tr>
-            <tr>
-              <td colSpan="2"><button type="button" className="non-operators" onClick={this.handlePress}>0</button></td>
-              <td><button type="button" className="non-operators" onClick={this.handlePress}>.</button></td>
-              <td><button type="button" className="operators" onClick={this.handlePress}>=</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="calc-container">
+      <table id="calc" cellSpacing="0">
+        <tbody id="calc-body">
+          <tr className="result-container">
+            <td colSpan="4" className="result">
+              <span>{total}</span>
+              <span>{operation}</span>
+              <span>{next}</span>
+            </td>
+          </tr>
+          <tr>
+            <td><button type="button" className="non-operators" onClick={handlePress}>AC</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>+/-</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>%</button></td>
+            <td><button type="button" className="operators" onClick={handlePress}>÷</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" className="non-operators" onClick={handlePress}>7</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>8</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>9</button></td>
+            <td><button type="button" className="operators" onClick={handlePress}>x</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" className="non-operators" onClick={handlePress}>4</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>5</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>6</button></td>
+            <td><button type="button" className="operators" onClick={handlePress}>-</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" className="non-operators" onClick={handlePress}>1</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>2</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>3</button></td>
+            <td><button type="button" className="operators" onClick={handlePress}>+</button></td>
+          </tr>
+          <tr>
+            <td colSpan="2"><button type="button" className="non-operators" onClick={handlePress}>0</button></td>
+            <td><button type="button" className="non-operators" onClick={handlePress}>.</button></td>
+            <td><button type="button" className="operators" onClick={handlePress}>=</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 export default Calculator;
