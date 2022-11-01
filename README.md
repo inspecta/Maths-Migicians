@@ -1,7 +1,8 @@
 # Maths-Magicians
 
 ## Description the project.
-Single Page Calculator application developed using React. Calculator does simple arithmetic operations involving Addition, Subtraction, Division and Multiplication 
+
+Single Page Calculator application developed using React. Calculator does simple arithmetic operations involving Addition, Subtraction, Division and Multiplication
 
 ## Built With
 
@@ -39,6 +40,10 @@ Get the link to the repository [here](https://github.com/inspecta/Maths-Migician
 ### Deployment
 
 - Use Github pages to deploy project at no cost.
+
+### Live Demo
+
+- For live demo, click [here](https://inspecta.github.io/Maths-Migicians/)
 
 ## Authors
 
