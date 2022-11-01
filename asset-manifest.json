@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/Maths-Migicians/static/css/main.533ec641.css",
-    "main.js": "/github.io/Maths-Migicians/static/js/main.9d3a73d1.js",
-    "index.html": "/github.io/Maths-Migicians/index.html",
-    "main.533ec641.css.map": "/github.io/Maths-Migicians/static/css/main.533ec641.css.map",
-    "main.9d3a73d1.js.map": "/github.io/Maths-Migicians/static/js/main.9d3a73d1.js.map"
+    "main.css": "/Maths-Migicians/static/css/main.533ec641.css",
+    "main.js": "/Maths-Migicians/static/js/main.9d3a73d1.js",
+    "index.html": "/Maths-Migicians/index.html",
+    "main.533ec641.css.map": "/Maths-Migicians/static/css/main.533ec641.css.map",
+    "main.9d3a73d1.js.map": "/Maths-Migicians/static/js/main.9d3a73d1.js.map"
   },
   "entrypoints": [
     "static/css/main.533ec641.css",
