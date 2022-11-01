@@ -27,7 +27,7 @@ const Calculator = () => {
             </td>
           </tr>
           <tr>
-            <td><button type="button" className="non-operators" onClick={handlePress}>AC</button></td>
+            <td><button type="button" className="non-operators ac" onClick={handlePress}>AC</button></td>
             <td><button type="button" className="non-operators" onClick={handlePress}>+/-</button></td>
             <td><button type="button" className="non-operators" onClick={handlePress}>%</button></td>
             <td><button type="button" className="operators" onClick={handlePress}>÷</button></td>

@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/cascadia-code");
+@import url("https://fonts.cdnfonts.com/css/cascadia-code");
 
 *,
 *::before,
@@ -16,21 +16,31 @@ body {
   height: 80vh;
 }
 
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 .calc-container {
-  border: 1px solid rgb(128, 128, 128);
-  margin: 0;
+  margin-bottom: 1em;
 }
 
 table {
-  border-spacing: 2px;
+  border-spacing: 0;
+  margin: auto;
 }
 
 tbody {
-  background: rgb(143, 143, 143);
+  background: rgb(179 178 178);
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
 }
 
 tr {
   width: 100%;
+}
+
+td {
+  padding: 5px;
 }
 
 td > input {
@@ -44,7 +54,13 @@ td > input {
 .result {
   text-align: right;
   color: #fff;
-  padding: 15px 0 15px 0;
+  padding: 30px 5px 20px 0;
+  font-size: 1.3em;
+}
+
+.result-container {
+  background: rgb(71, 71, 71);
+  border-radius: 10px;
 }
 
 input::placeholder {
@@ -53,10 +69,12 @@ input::placeholder {
 }
 
 td > button {
-  padding: 15px 40px;
+  padding: 25px 40px;
   width: 100%;
   text-align: center;
   border: 0;
+  border-radius: 15px;
+  box-shadow: 4px 4px 3px 0 #000;
 }
 
 .operators {
@@ -71,4 +89,22 @@ td > button {
 .non-operators:hover {
   background: rgb(124, 124, 124);
   color: #fff;
+}
+
+.ac {
+  color: red;
+}
+
+.hrQuotes {
+  margin: auto;
+  width: 100px;
+  margin-bottom: 2em;
+  border-color: rgba(40, 0, 199, 0.13);
+}
+
+.hrQuotesBottom {
+  margin: auto;
+  width: 100px;
+  margin-top: 2em;
+  border-color: rgba(40, 0, 199, 0.13);
 }

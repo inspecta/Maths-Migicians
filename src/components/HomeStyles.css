@@ -1,0 +1,19 @@
+.home {
+  padding: 40px;
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: rgba(78, 34, 255, 0.48);
+}
+
+p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.more {
+  font-style: italic;
+}

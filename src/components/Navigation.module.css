@@ -1,0 +1,29 @@
+.header {
+  margin: 0 0 1em 0;
+  padding: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(46, 0, 230, 0.27);
+  background: rgba(40, 0, 199, 0.05);
+}
+
+h2 {
+  color: rgba(40, 0, 199, 0.7);
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navMenu {
+  display: flex;
+}
+
+.navMenu > li {
+  list-style: none;
+  padding-right: 10px;
+}
+
+.navMenu > li > a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
