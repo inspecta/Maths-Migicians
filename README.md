@@ -39,11 +39,11 @@ Get the link to the repository [here](https://github.com/inspecta/Maths-Migician
 
 ### Deployment
 
-- Use Github pages to deploy project at no cost.
+- Use Netlify to upload repository
 
 ### Live Demo
 
-- For live demo, click [here](https://inspecta.github.io/Maths-Migicians/)
+- For live demo, click [here](https://calm-buttercream-dba002.netlify.app/)
 
 ## Authors
 
